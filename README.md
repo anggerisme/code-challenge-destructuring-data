@@ -49,7 +49,7 @@ const game = {
 };
 ```
 
-## 1. Memberikan nama untuk masing-masing array yang ada di property players
+### 1. Memberikan nama untuk masing-masing array yang ada di property players
 
 ```javascript
 const [players1, players2] = game.players;
@@ -57,3 +57,12 @@ console.log(players1, players2);
 ```
 
 > Karena `arrays` yang ada di dalam property `players` ada 2 `arrays` yang terpisah maka kita dapat memberikanya nama, sehingga kita tidak perlu lagi menggunakan indeks untuk memanggilnya
+
+### 2. Menyimpan nilai array ke dalam variable
+
+```javascript
+const [gk, ...fieldPlayer] = players1;
+console.log(gk, fieldPlayer);
+```
+
+> `gk` akan mewakili indeks/order 0 dan `...fieldPlayer` akan menampung sisanya.
