@@ -58,3 +58,14 @@ console.log(allPlayers);
 //4. Menambahkan nilai baru ke dalam arrays
 const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
 console.log(players1Final);
+
+console.log("------ 5 ---------");
+//5. Destructuring nested objek
+/* Penulisan cara 1 */
+// const { team1, x: draw, team2 } = game.odds;
+// console.log(team1, draw, team2);
+/* Penulisan cara 2 */
+const {
+  odds: { team1, x: draw, team2 },
+} = game;
+console.log(team1, draw, team2);

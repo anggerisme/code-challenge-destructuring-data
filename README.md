@@ -75,3 +75,33 @@ console.log(allPlayers);
 ```
 
 > Semua nilai yang ada di arrays `players1` dan `players2` dapat sekaligus digabungkan hanya dengan menggunakan `spread` operator
+
+### 4. Menambahkan nilai baru ke dalam arrays
+
+```javascript
+const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
+```
+
+> Kita dapat menyisipkan nilai baru pada suatu `arrays` dengan hanya menuliskanya secara biasa (dipisahkan dengan koma) disamping nilai dari `arrays` sebelumnya (`players1`).
+
+### 5. Destructuring nested objek
+
+#### Penulisan cara 1
+
+```javascript
+const { team1, x: draw, team2 } = game.odds;
+console.log(team1, draw, team2);
+```
+
+```javascript
+const {
+  odds: { team1, x: draw, team2 },
+} = game;
+console.log(team1, draw, team2);
+```
+
+> Karena `odds` merupakan salah satu `property` di dalam objek `game` maka ia ditulis di dalam kurung kurawa ketika ingin men-_destructuring_ objek `game`. Kemudian karena ia juga objek yang bersarang di objek game maka ketika kita ingin menguraikan nilai yang ada di dalamnya kita juga menyertakan `{}`.
+
+```javascript
+
+```
