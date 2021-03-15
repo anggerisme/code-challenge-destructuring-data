@@ -42,3 +42,11 @@ const game = {
     team2: 6.5,
   },
 };
+
+//1. Memberikan nama untuk masing-masing array yang ada di property players
+const [players1, players2] = game.players;
+console.log(players1, players2);
+
+//2. Menyimpan suatu nilai dalam array ke dalam variable
+const [gk, ...fieldPlayer] = players1;
+console.log(gk, fieldPlayer);
