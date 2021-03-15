@@ -89,9 +89,11 @@ const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
 #### Penulisan cara 1
 
 ```javascript
-const { team1, x: draw, team2 } = game.odds;
+const { team1, x: draw, team2 } = game.odds; // masih menggunakan parent-nya
 console.log(team1, draw, team2);
 ```
+
+#### Penulisan cara 2
 
 ```javascript
 const {
@@ -102,6 +104,20 @@ console.log(team1, draw, team2);
 
 > Karena `odds` merupakan salah satu `property` di dalam objek `game` maka ia ditulis di dalam kurung kurawa ketika ingin men-_destructuring_ objek `game`. Kemudian karena ia juga objek yang bersarang di objek game maka ketika kita ingin menguraikan nilai yang ada di dalamnya kita juga menyertakan `{}`.
 
-```javascript
+### 6. Function untuk menerima banyak argumen
 
+```javascript
+const printGoals = function (...players) {
+  console.log(`${players.length} goals were scored`);
+};
+```
+
+> Ingat bahwa rest (`...`) yang digunakan sebagai parameters diatas sangat berguna untuk menampung banyak argumen sekaligus yang. Jika hanya menggunakan satu variable saja maka yang dapat dimasukkan ke dalam function hanya satu nilai `array` saja.
+> Fungsi `players.length` diatas berfungsi untuk mengetahui panjang/banyaknya nilai dari suatu array.
+
+Mari kita gunakan function diatas :
+
+```javascript
+printGoals("Davies", "Mueller", "Lewandowski", "Kimmich"); // 4
+printGoals("Davies", "Mueller"); // 2
 ```

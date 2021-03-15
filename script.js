@@ -69,3 +69,11 @@ const {
   odds: { team1, x: draw, team2 },
 } = game;
 console.log(team1, draw, team2);
+
+// 6. Rest Parameters : Parameters yang dapat menerima banyak argumen
+const printGoals = function (...players) {
+  console.log(`${players.length} goals were scored`);
+};
+
+printGoals("Davies", "Mueller", "Lewandowski", "Kimmich");
+printGoals("Davies", "Mueller");
