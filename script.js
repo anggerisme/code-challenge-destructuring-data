@@ -54,3 +54,7 @@ console.log(gk, fieldPlayer);
 //3. Menggabungkan kumpulan array dalam satu variable
 const allPlayers = [...players1, ...players2];
 console.log(allPlayers);
+
+//4. Menambahkan nilai baru ke dalam arrays
+const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
+console.log(players1Final);
