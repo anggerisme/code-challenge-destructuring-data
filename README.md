@@ -112,8 +112,8 @@ const printGoals = function (...players) {
 };
 ```
 
-> Ingat bahwa rest (`...`) yang digunakan sebagai parameters diatas sangat berguna untuk menampung banyak argumen sekaligus yang. Jika hanya menggunakan satu variable saja maka yang dapat dimasukkan ke dalam function hanya satu nilai `array` saja.
-> Fungsi `players.length` diatas berfungsi untuk mengetahui panjang/banyaknya nilai dari suatu array.
+> Ingat bahwa rest (`...`) yang digunakan sebagai parameters diatas sangat berguna untuk menampung banyak argumen sekaligus yang jika hanya menggunakan satu variable saja maka yang dapat dimasukkan ke dalam function hanya satu nilai `array` saja.
+> Adapun `players.length` diatas berfungsi untuk mengetahui panjang/banyaknya nilai dari suatu array.
 
 Mari kita gunakan function diatas :
 
@@ -121,3 +121,12 @@ Mari kita gunakan function diatas :
 printGoals("Davies", "Mueller", "Lewandowski", "Kimmich"); // 4
 printGoals("Davies", "Mueller"); // 2
 ```
+
+### 7. Short-circuit
+
+```javascript
+team1 > team2 && console.log("Team 1 kemungkinan akan menang! 🎉");
+team2 > team1 && console.log("Team 2 kemungkinan akan menang! 🎉");
+```
+
+> Pada logica operator diatas terdapat 2 nilai yaitu [team1 > team2] dan [console.log] yang dipasangkan menggunakan operator logika AND `&&`. Ingat bahwa prinsip dari logika operator adalah semuanya harus benar untuk diproses.

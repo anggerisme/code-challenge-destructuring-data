@@ -77,3 +77,6 @@ const printGoals = function (...players) {
 
 printGoals("Davies", "Mueller", "Lewandowski", "Kimmich");
 printGoals("Davies", "Mueller");
+
+team1 > team2 && console.log(`Team 1 kemungkinan akan menang! 🎉`);
+team1 < team2 && console.log(`Team 2 kemungkinan akan menang! 🎉`);
