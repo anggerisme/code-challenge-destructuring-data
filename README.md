@@ -66,3 +66,12 @@ console.log(gk, fieldPlayer);
 ```
 
 > `gk` akan mewakili indeks/order 0 dan `...fieldPlayer` akan menampung sisanya.
+
+### 3. Menggabungkan kumpulan array dalam satu variable
+
+```javascript
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers);
+```
+
+> Semua nilai yang ada di arrays `players1` dan `players2` dapat sekaligus digabungkan hanya dengan menggunakan `spread` operator
