@@ -55,3 +55,5 @@ const game = {
 const [players1, players2] = game.players;
 console.log(players1, players2);
 ```
+
+> Karena `arrays` yang ada di dalam property `players` ada 2 `arrays` yang terpisah maka kita dapat memberikanya nama, sehingga kita tidak perlu lagi menggunakan indeks untuk memanggilnya
